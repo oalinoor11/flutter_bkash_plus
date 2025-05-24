@@ -1,5 +1,5 @@
 <p align="center"> <img src="https://www.bkash.com/images/favicon.png"> </p> <h1 align="center">bKash (BD) Mobile Finance Payment Gateway Flutter Package</h1> <p align="center"> <a href="https://pub.dev/packages/flutter_bkash_plus_plus"><img src="https://img.shields.io/pub/v/flutter_bkash_plus_plus.svg"></a> <a href="https://opensource.org/licenses/BSD-3-Clause"><img src="https://img.shields.io/badge/License-BSD_3--Clause-blue.svg"></a> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"> <a href="https://github.com/ellerbrock/open-source-badges/"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a> </p>
-This is a Flutter package for the bKash BD Payment Gateway. Originally developed by the CarbonCodes team, it has been updated and maintained by Shahed Oali Noor from CarbonCodes Limited for extended use in modern Flutter projects.
+This is a Flutter package for the bKash BD Payment Gateway. Originally developed by the Codeboxr team, it has been updated and maintained by Shahed Oali Noor from CarbonCodes Limited for extended use in modern Flutter projects.
 
 ⚠️ Important: You must contact the bKash sales/developer team to receive development or production API credentials. We do not provide any test credentials or keys.
 
