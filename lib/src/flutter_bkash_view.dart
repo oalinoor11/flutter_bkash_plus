@@ -95,11 +95,12 @@ class _FlutterBkashViewState extends State<FlutterBkashView> {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.pink,
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back, color: Colors.white),
-            onPressed: () => Navigator.of(context).pop(BkashPaymentStatus.canceled),
-          ),
-          title: const Text('bKash Checkout', style: TextStyle(color: Colors.white)),
+          // leading: IconButton(
+          //   icon: const Icon(Icons.arrow_back, color: Colors.white),
+          //   onPressed: () => Navigator.of(context).pop(BkashPaymentStatus.canceled),
+          // ),]
+          automaticallyImplyLeading: false,
+          title: const Text('bKash Payment', style: TextStyle(color: Colors.white)),
         ),
         body: WebViewWidget(controller: _webViewController),
       ),

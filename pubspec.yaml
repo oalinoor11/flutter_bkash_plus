@@ -1,6 +1,6 @@
 name: flutter_bkash_plus
 description: A fixed and improved version of the flutter_bkash package for bKash payment integration in Flutter apps.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/oalinoor11/flutter_bkash_plus
 repository: https://github.com/oalinoor11/flutter_bkash_plus
 issue_tracker: https://github.com/oalinoor11/flutter_bkash_plus/issues
