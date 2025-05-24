@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bkash/src/bkash_payment_status.dart';
+import 'package:flutter_bkash_plus/src/bkash_payment_status.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 typedef PaymentStatus = void Function(BkashPaymentStatus bkashPaymentStatus);

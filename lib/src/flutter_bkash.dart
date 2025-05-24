@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bkash/src/apis/models/token_response_model.dart';
-import 'package:flutter_bkash/src/bkash_api.dart';
-import 'package:flutter_bkash/src/bkash_credentials.dart';
-import 'package:flutter_bkash/src/flutter_bkash_view.dart';
+import 'package:flutter_bkash_plus/src/apis/models/token_response_model.dart';
+import 'package:flutter_bkash_plus/src/bkash_api.dart';
+import 'package:flutter_bkash_plus/src/bkash_credentials.dart';
+import 'package:flutter_bkash_plus/src/flutter_bkash_view.dart';
 import 'package:fpdart/fpdart.dart';
 
 import 'bkash_payment_response.dart';
