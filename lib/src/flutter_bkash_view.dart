@@ -39,7 +39,7 @@ class _FlutterBkashViewState extends State<FlutterBkashView> {
           NavigationDelegate(
             onWebResourceError: (WebResourceError error) {
               debugPrint("WebView error: ${error.description}, type: ${error.errorType}, code: ${error.errorCode}");
-              showSnackBar("ইন্টারনেট সংযোগে সমস্যা হচ্ছে। অনুগ্রহ করে আবার চেষ্টা করুন।");
+              // showSnackBar("ইন্টারনেট সংযোগে সমস্যা হচ্ছে। অনুগ্রহ করে আবার চেষ্টা করুন।");
               // Navigator.of(context).pop(BkashPaymentStatus.failed);
             },
             onNavigationRequest: (NavigationRequest request) {
@@ -101,6 +101,7 @@ class _FlutterBkashViewState extends State<FlutterBkashView> {
           // ),]
           automaticallyImplyLeading: false,
           title: const Text('bKash Payment', style: TextStyle(color: Colors.white)),
+          centerTitle: true,
         ),
         body: WebViewWidget(controller: _webViewController),
       ),
