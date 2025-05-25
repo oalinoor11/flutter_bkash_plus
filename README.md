@@ -62,4 +62,4 @@ Need help or want to support the development?
 
 ---
 
-> Built with ❤️ by CarbonCodes Limited
+> Built with ❤️by Shahed Oali Noor from CarbonCodes Limited
