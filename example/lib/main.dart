@@ -185,7 +185,7 @@ class HomePageState extends State<HomePage> {
                       final flutterBkash =
                       FlutterBkash(logResponse: true);
 
-                      //live credential
+                      //live credential(if you want to help package developer, make a payment with this live credential)
                       // final flutterBkash = FlutterBkash(
                       //   bkashCredentials: const BkashCredentials(
                       //     username: "01783680336",
