@@ -77,6 +77,7 @@ class HomePageState extends State<HomePage> {
                     controller: _amountController,
                     decoration: const InputDecoration(
                       hintText: "1240",
+                      hintStyle: TextStyle(color: Colors.grey),
                       contentPadding: EdgeInsets.symmetric(
                           horizontal: 10, vertical: 0),
                       border: OutlineInputBorder(
@@ -179,8 +180,21 @@ class HomePageState extends State<HomePage> {
                       });
 
                       /// create an instance of FlutterBkash
+
+                      //sandbox credential
                       final flutterBkash =
                       FlutterBkash(logResponse: true);
+
+                      //live credential
+                      // final flutterBkash = FlutterBkash(
+                      //   bkashCredentials: const BkashCredentials(
+                      //     username: "01783680336",
+                      //     password: "nR8{^3j1Z@B",
+                      //     appKey: "zuM020mk8M5BfXesMweZtiQMtc",
+                      //     appSecret: "9afwkpN0tTJxIItoYwlJMlDbq8U2NMOHCFVKLTLIxtGKuNAVipzm",
+                      //     isSandbox: false,
+                      //   ),
+                      // );
 
                       /// if the payment type is createAgreement
                       if (_paymentType == PaymentType.createAgreement) {
