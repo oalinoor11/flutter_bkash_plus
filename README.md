@@ -2,6 +2,7 @@
 This is the best Flutter package for the bKash Payment Gateway. This package is developed and maintaining by Shahed Oali Noor from CarbonCodes Limited to use in modern Flutter projects.
 
 
+
 ⚠️ Important: You must contact the bKash sales/developer team to receive your production API credentials.
 
 ✅ This package includes built-in sandbox credentials for testing purposes. You do not need to manually configure sandbox credentials for basic integration testing.
