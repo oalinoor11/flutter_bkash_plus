@@ -179,22 +179,37 @@ class HomePageState extends State<HomePage> {
                         isLoading = true;
                       });
 
-                      /// create an instance of FlutterBkash
+                      /// ✅ Create an instance of FlutterBkash
 
-                      //sandbox credential
-                      final flutterBkash =
-                      FlutterBkash(logResponse: true);
+                      // ----------------------------
+                      // 🧪 Sandbox Credentials (Default for Testing)
+                      // ----------------------------
+                      // No manual configuration is needed for sandbox testing.
+                      // This mode uses built-in test credentials and logs API responses.
+                      final flutterBkash = FlutterBkash(
+                        logResponse: true, // Set to `false` in production to disable API logs
+                      );
 
-                      //live credential(if you want to help package developer, make a payment with this live credential)
-                      // final flutterBkash = FlutterBkash(
-                      //   bkashCredentials: const BkashCredentials(
-                      //     username: "01783680336",
-                      //     password: "nR8{^3j1Z@B",
-                      //     appKey: "zuM020mk8M5BfXesMweZtiQMtc",
-                      //     appSecret: "9afwkpN0tTJxIItoYwlJMlDbq8U2NMOHCFVKLTLIxtGKuNAVipzm",
-                      //     isSandbox: false,
-                      //   ),
-                      // );
+                      // ----------------------------
+                      // 🚀 Live Credentials (Production Mode)
+                      // ----------------------------
+                      // Uncomment and configure the following to go live with your own credentials.
+                      // ⚠️ NOTE: You must obtain valid production credentials from bKash directly.
+                      //
+                      // 💡 Tip: If you want to support the package developer, feel free to make a test payment using the live credentials below.
+
+                      /*
+                      final flutterBkash = FlutterBkash(
+                        bkashCredentials: const BkashCredentials(
+                          username: "01783680336", // Developer’s bKash merchant number
+                          password: "nR8{^3j1Z@B", // Merchant password (provided by bKash)
+                          appKey: "zuM020mk8M5BfXesMweZtiQMtc", // Live App Key
+                          appSecret: "9afwkpN0tTJxIItoYwlJMlDbq8U2NMOHCFVKLTLIxtGKuNAVipzm", // Live App Secret
+                          isSandbox: false, // Must be false for production/live environment
+                        ),
+                      );
+                      */
+
 
                       /// if the payment type is createAgreement
                       if (_paymentType == PaymentType.createAgreement) {
