@@ -38,12 +38,15 @@ class _FlutterBkashViewState extends State<FlutterBkashView> {
         ..setNavigationDelegate(
           NavigationDelegate(
             onWebResourceError: (WebResourceError error) {
-              debugPrint("WebView error: ${error.description}, type: ${error.errorType}, code: ${error.errorCode}");
+              debugPrint(
+                "WebView error: ${error.description}, type: ${error.errorType}, code: ${error.errorCode}",
+              );
               // showSnackBar("ইন্টারনেট সংযোগে সমস্যা হচ্ছে। অনুগ্রহ করে আবার চেষ্টা করুন।");
               // Navigator.of(context).pop(BkashPaymentStatus.failed);
             },
             onNavigationRequest: (NavigationRequest request) {
               debugPrint("Navigation URL: ${request.url}");
+
               if (request.url.startsWith(widget.successCallbackURL)) {
                 Navigator.of(context).pop(BkashPaymentStatus.successed);
                 return NavigationDecision.prevent;
@@ -54,6 +57,7 @@ class _FlutterBkashViewState extends State<FlutterBkashView> {
                 Navigator.of(context).pop(BkashPaymentStatus.canceled);
                 return NavigationDecision.prevent;
               }
+
               return NavigationDecision.navigate;
             },
           ),
@@ -95,12 +99,11 @@ class _FlutterBkashViewState extends State<FlutterBkashView> {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.pink,
-          // leading: IconButton(
-          //   icon: const Icon(Icons.arrow_back, color: Colors.white),
-          //   onPressed: () => Navigator.of(context).pop(BkashPaymentStatus.canceled),
-          // ),]
           automaticallyImplyLeading: false,
-          title: const Text('bKash Payment', style: TextStyle(color: Colors.white)),
+          title: const Text(
+            'bKash Payment',
+            style: TextStyle(color: Colors.white),
+          ),
           centerTitle: true,
         ),
         body: WebViewWidget(controller: _webViewController),
